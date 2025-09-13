@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { SharedModule } from '../../sharedModule';
 import { Router } from '@angular/router';
-import { StyleClass } from 'primeng/styleclass';
+import { MusicKnob } from '../music-knob/music-knob';
 
 @Component({
   selector: 'app-home-header',
-  imports: [SharedModule],
+  imports: [SharedModule, MusicKnob],
   templateUrl: './home-header.html',
   styleUrl: './home-header.scss',
 })
