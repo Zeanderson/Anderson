@@ -25,12 +25,12 @@ export class HomeHeader {
         {
           label: 'Nutrition Tracker',
           icon: 'pi pi-box',
-          command: () => this.onMenuItemClick('/nutritionTracker'),
+          command: () => this.onMenuItemClick('/nutrition-tracker'),
         },
         {
           label: 'Lasor Tag System',
           icon: 'pi pi-desktop',
-          command: () => this.onMenuItemClick('/lasorTag'),
+          command: () => this.onMenuItemClick('/lasor-tag'),
         },
       ],
     },
