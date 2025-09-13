@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { SharedModule } from '../../sharedModule';
 import { Router } from '@angular/router';
-import { StyleClass } from 'primeng/styleclass';
+import { MusicKnob } from '../music-knob/music-knob';
 
 @Component({
   selector: 'app-home-header',
-  imports: [SharedModule],
+  imports: [SharedModule, MusicKnob],
   templateUrl: './home-header.html',
   styleUrl: './home-header.scss',
 })
@@ -25,12 +25,12 @@ export class HomeHeader {
         {
           label: 'Nutrition Tracker',
           icon: 'pi pi-box',
-          command: () => this.onMenuItemClick('/nutritionTracker'),
+          command: () => this.onMenuItemClick('/nutrition-tracker'),
         },
         {
           label: 'Lasor Tag System',
           icon: 'pi pi-desktop',
-          command: () => this.onMenuItemClick('/lasorTag'),
+          command: () => this.onMenuItemClick('/lasor-tag'),
         },
       ],
     },
