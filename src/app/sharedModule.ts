@@ -4,8 +4,11 @@ import { MenubarModule } from 'primeng/menubar';
 import { SkeletonModule } from 'primeng/skeleton';
 import { CardModule } from 'primeng/card';
 import { ProgressBarModule } from 'primeng/progressbar';
-import { KnobModule } from 'primeng/knob';
+import { SliderModule } from 'primeng/slider';
 import { FormsModule } from '@angular/forms';
+import { InputIconModule } from 'primeng/inputicon';
+import { DialogModule } from 'primeng/dialog';
+import { SplitterModule } from 'primeng/splitter';
 
 @NgModule({
   declarations: [],
@@ -16,8 +19,11 @@ import { FormsModule } from '@angular/forms';
     SkeletonModule,
     CardModule,
     ProgressBarModule,
-    KnobModule,
+    SliderModule,
     FormsModule,
+    InputIconModule,
+    DialogModule,
+    SplitterModule,
   ],
 })
 export class SharedModule {}
