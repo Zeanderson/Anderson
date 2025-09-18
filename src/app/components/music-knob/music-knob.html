@@ -1,4 +1,32 @@
-<p-card>
-  <p-knob [(ngModel)]="value" [size]="100" (onChange)="changeAudioVolume()" />
-  <p-button (click)="playAudio()">Play Audio</p-button>
-</p-card>
+<p-dialog [(visible)]="isDialogOpen" [modal]="true" [closable]="false">
+  <ng-template #headless>
+    <div class="dialog-content">
+      <section>
+        <p>Hello!</p>
+        <p>Would you like to listen to some tunes?</p>
+      </section>
+      <section>
+        <p-button label="No, I am lame..." [text]="true" (click)="closeDialog(true)" />
+        <p-button label="Of course!" [text]="true" (click)="closeDialog(false)" />
+      </section>
+    </div>
+  </ng-template>
+</p-dialog>
+
+<div [class.blurred]="isDialogOpen">
+  <p-card [class]="lofiImageClass">
+    <div class="container-column">
+      <h3>Lofi hits</h3>
+      <div class="container-row">
+        <p-slider
+          [(ngModel)]="knobValue"
+          [style]="{ width: '14rem' }"
+          (onSlideEnd)="changeAudioVolume()"
+        />
+        <p-button (click)="audioButtonClick()">
+          <p-inputicon [class]="audioButtonClass" />
+        </p-button>
+      </div>
+    </div>
+  </p-card>
+</div>

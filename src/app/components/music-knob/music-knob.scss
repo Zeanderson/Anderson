@@ -1,0 +1,42 @@
+.container-column {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+  color: #2a5fae;
+  text-shadow: #2a5fae 0 0 5px;
+  font-size: 1.3rem;
+}
+
+.container-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.dialog-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.lofi-gif-background {
+  background-image: url('/assets/lofi-img.gif');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  padding-bottom: 10vh;
+}
+
+.lofi-png-background {
+  background-image: url('/assets/lofi-img.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  padding-bottom: 10vh;
+}
