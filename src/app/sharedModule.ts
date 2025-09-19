@@ -9,6 +9,11 @@ import { FormsModule } from '@angular/forms';
 import { InputIconModule } from 'primeng/inputicon';
 import { DialogModule } from 'primeng/dialog';
 import { SplitterModule } from 'primeng/splitter';
+import { ToastModule } from 'primeng/toast';
+import { RippleModule } from 'primeng/ripple';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { TimelineModule } from 'primeng/timeline';
+import { GalleriaModule } from 'primeng/galleria';
 
 @NgModule({
   declarations: [],
@@ -24,6 +29,11 @@ import { SplitterModule } from 'primeng/splitter';
     InputIconModule,
     DialogModule,
     SplitterModule,
+    ToastModule,
+    RippleModule,
+    PdfViewerModule,
+    TimelineModule,
+    GalleriaModule,
   ],
 })
 export class SharedModule {}

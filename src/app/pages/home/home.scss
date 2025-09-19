@@ -1,1 +1,32 @@
+::ng-deep .p-splitter {
+  border: none !important; // removes outer border
+  --p-splitter-border-color: transparent; // CSS variable
+}
 
+::ng-deep .p-splitter-gutter {
+  background: transparent !important; // makes the splitter bar invisible
+  border: none !important; // removes any border line
+}
+
+.split-padding {
+  padding: 1rem;
+}
+
+::ng-deep .p-timeline-event-opposite {
+  flex: 0 !important;
+  padding: 1rem !important;
+  margin: 0 !important;
+  min-width: 0 !important;
+}
+
+::ng-deep .p-galleria {
+  width: 50vh;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,5 +1,5 @@
 .container-column {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -8,6 +8,7 @@
   color: #2a5fae;
   text-shadow: #2a5fae 0 0 5px;
   font-size: 1.3rem;
+  width: max-content;
 }
 
 .container-row {
@@ -30,7 +31,10 @@
   background-size: cover;
   background-position: center;
   display: flex;
-  padding-bottom: 10vh;
+  justify-content: center;
+  align-items: center;
+  padding: 10vh;
+  border-radius: 1.5rem;
 }
 
 .lofi-png-background {
@@ -38,5 +42,8 @@
   background-size: cover;
   background-position: center;
   display: flex;
-  padding-bottom: 10vh;
+  justify-content: center;
+  align-items: center;
+  padding: 10vh;
+  border-radius: 1.5rem;
 }

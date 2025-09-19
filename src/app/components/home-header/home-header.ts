@@ -1,16 +1,18 @@
 import { Component } from '@angular/core';
 import { SharedModule } from '../../sharedModule';
 import { Router } from '@angular/router';
-import { MusicKnob } from '../music-knob/music-knob';
+import { MessageService } from 'primeng/api';
 
 @Component({
   selector: 'app-home-header',
-  imports: [SharedModule, MusicKnob],
+  standalone: true,
+  imports: [SharedModule],
+  providers: [MessageService],
   templateUrl: './home-header.html',
   styleUrl: './home-header.scss',
 })
 export class HomeHeader {
-  constructor(private router: Router) {}
+  constructor(private router: Router, private messageService: MessageService) {}
   public menuItems = [
     {
       label: 'Projects',
@@ -43,5 +45,14 @@ export class HomeHeader {
 
   private onMenuItemClick(path: string) {
     this.router.navigate([path]);
+  }
+
+  public copyEmail() {
+    navigator.clipboard.writeText('zackanderson14@gmail.com');
+    this.messageService.add({
+      severity: 'info',
+      detail: 'Copyed email to clipboard!',
+      life: 2000,
+    });
   }
 }

@@ -1,7 +1,30 @@
-<div class="container-column">
-  <h2>Welcome!!</h2>
+<p-toast />
+<header>
   <p-card>
-    <p-menubar [model]="menuItems" />
+    <p-menubar [model]="menuItems">
+      <ng-template #end>
+        <div>
+          <a
+            href="https://www.linkedin.com/in/zachary-anderson-swe/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="pi pi-linkedin"> Zachary Anderson</i>
+          </a>
+          <a href="https://github.com/Zeanderson" target="_blank" rel="noopener noreferrer">
+            <i class="pi pi-github"> Zeanderson</i>
+          </a>
+          <i class="pi pi-envelope">
+            zackanderson14@gmail.com
+            <i
+              class="pi pi-copy"
+              (click)="copyEmail()"
+              style="cursor: pointer"
+              title="Copy to clipboard"
+            ></i>
+          </i>
+        </div>
+      </ng-template>
+    </p-menubar>
   </p-card>
-  <app-music-knob />
-</div>
+</header>

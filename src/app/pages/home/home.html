@@ -1,1 +1,49 @@
 <app-home-header />
+
+<p-splitter [panelSizes]="[30, 70]" class="split-padding">
+  <ng-template #panel>
+    <p-timeline [value]="events">
+      <ng-template #marker let-event>
+        <span
+          class="flex w-8 h-8 items-center justify-center text-white rounded-full z-10 shadow-sm"
+          [style]="{ 'background-color': event.color }"
+        >
+          <i [class]="event.icon"></i>
+        </span>
+      </ng-template>
+      <ng-template #content let-event>
+        <p-card [header]="event.status" [subheader]="event.date">
+          <p>
+            {{ event.text }}
+          </p>
+        </p-card>
+      </ng-template>
+    </p-timeline>
+  </ng-template>
+
+  <ng-template #panel>
+    <p-splitter [panelSizes]="[80, 20]">
+      <ng-template #panel>
+        <div class="flex-row">
+          <p-galleria
+            [value]="images"
+            indicatorsPosition="bottom"
+            [showIndicators]="true"
+            [showThumbnails]="false"
+            showIndicatorsOnItem="false"
+          >
+            <ng-template pTemplate="item" let-item>
+              <img [src]="item" style="width: 100%; display: block" />
+            </ng-template>
+          </p-galleria>
+          <p-card>
+            <p>Hello, my name is Zachary</p>
+          </p-card>
+        </div>
+      </ng-template>
+      <ng-template #panel>
+        <app-music-knob />
+      </ng-template>
+    </p-splitter>
+  </ng-template>
+</p-splitter>

@@ -13,20 +13,18 @@
   </ng-template>
 </p-dialog>
 
-<div [class.blurred]="isDialogOpen">
-  <p-card [class]="lofiImageClass">
-    <div class="container-column">
-      <h3>Lofi hits</h3>
-      <div class="container-row">
-        <p-slider
-          [(ngModel)]="knobValue"
-          [style]="{ width: '14rem' }"
-          (onSlideEnd)="changeAudioVolume()"
-        />
-        <p-button (click)="audioButtonClick()">
-          <p-inputicon [class]="audioButtonClass" />
-        </p-button>
-      </div>
+<div [class.blurred]="isDialogOpen" [class]="lofiImageClass">
+  <p-card class="container-column">
+    <h3>Lofi Hits</h3>
+    <div class="container-row">
+      <p-slider
+        [(ngModel)]="knobValue"
+        [style]="{ width: '5vh' }"
+        (onSlideEnd)="changeAudioVolume()"
+      />
+      <p-button (click)="audioButtonClick()">
+        <p-inputicon [class]="audioButtonClass" />
+      </p-button>
     </div>
   </p-card>
 </div>

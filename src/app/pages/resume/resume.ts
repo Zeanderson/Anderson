@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { SharedModule } from '../../sharedModule';
+import { HomeHeader } from '../../components/home-header/home-header';
 
 @Component({
   selector: 'app-resume',
-  imports: [SharedModule],
+  imports: [SharedModule, HomeHeader],
   templateUrl: './resume.html',
   styleUrl: './resume.scss',
 })

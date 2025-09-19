@@ -1,7 +1,11 @@
-<div class="container">
-  <h1 style="margin: 0">Resume</h1>
-  <p-progressbar [value]="5" />
+<app-home-header />
+<div class="pdf-container">
+  <p-card>
+    <pdf-viewer
+      src="../../../assets/Anderson.pdf"
+      [render-text]="true"
+      [original-size]="false"
+      style="width: 80vh; height: 75vh"
+    ></pdf-viewer>
+  </p-card>
 </div>
-<p-card>
-  <p-skeleton height="50rem" />
-</p-card>

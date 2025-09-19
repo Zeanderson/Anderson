@@ -1,10 +1,5 @@
-.container {
+.pdf-container {
   display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 1rem;
-}
-
-.container p-progressbar {
-  flex: 1 1 0;
-  min-width: 0;
 }
