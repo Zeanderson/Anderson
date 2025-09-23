@@ -53,15 +53,15 @@ export class Home {
   }
 
   private loadImages() {
-    this.images.push('../../../assets/me/band.jpeg');
-    this.images.push('../../../assets/me/bye.jpeg');
-    this.images.push('../../../assets/me/car.jpeg');
-    this.images.push('../../../assets/me/fun1.jpeg');
-    this.images.push('../../../assets/me/grad.jpeg');
-    this.images.push('../../../assets/me/mountain.jpeg');
-    this.images.push('../../../assets/me/ppf.jpeg');
-    this.images.push('../../../assets/me/ppf2.jpeg');
-    this.images.push('../../../assets/me/ppf3.jpeg');
-    this.images.push('../../../assets/me/raft.jpeg');
+    this.images.push('assets/me/band.jpeg');
+    this.images.push('assets/me/bye.jpeg');
+    this.images.push('assets/me/car.jpeg');
+    this.images.push('assets/me/fun1.jpeg');
+    this.images.push('assets/me/grad.jpeg');
+    this.images.push('assets/me/mountain.jpeg');
+    this.images.push('assets/me/ppf.jpeg');
+    this.images.push('assets/me/ppf2.jpeg');
+    this.images.push('assets/me/ppf3.jpeg');
+    this.images.push('assets/me/raft.jpeg');
   }
 }
